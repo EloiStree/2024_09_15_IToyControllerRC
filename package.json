@@ -1,0 +1,23 @@
+
+{                                                                                
+  "name": "be.elab.irctoy",                              
+  "displayName": "Interface for RC Toy",                        
+  "version": "0.0.1",                         
+  "unity": "2018.1",                             
+  "unityRelease": "",                             
+  "description": "Controllers for RC Toy.",                         
+  "keywords": ["Script","Tool"],                       
+  "dependencies":{},     
+  "relatedPackages":{},     
+  "samples" : [],     
+  "author" : {
+"name":"",
+"mail":"",
+"url":""},     
+  "repository":{
+"type":"Git",
+"url":"https://github.com/EloiStree/2023_09_15_IToyControllerRC.git",
+"footprint":"",
+"revision":""},     
+  "category": "Script"                   
+} 
