@@ -131,6 +131,17 @@
                 },
                 {
                     "name": "",
+                    "id": "9b382572-f55c-4ec2-901e-5319c404f1c4",
+                    "path": "<Joystick>/stick/x",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "LeftJoystickHorizontal",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "900e8bbf-7fe5-4f08-9a76-52c6cd1eb68d",
                     "path": "<Gamepad>/leftStick/y",
                     "interactions": "",
@@ -205,6 +216,17 @@
                     "action": "LeftJoystickVertical",
                     "isComposite": false,
                     "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "9ac2036d-d798-49a8-948c-8ee0928e9da3",
+                    "path": "<Joystick>/stick/y",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "LeftJoystickVertical",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 },
                 {
                     "name": "",
@@ -285,6 +307,17 @@
                 },
                 {
                     "name": "",
+                    "id": "fac8003f-6ba0-4eec-b935-ee226467083f",
+                    "path": "<HID::Logitech WingMan Attack 2>/z",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "RightJoystickHorizontal",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "6d8ea5c8-f672-441d-b184-fe33a5e6706d",
                     "path": "<Gamepad>/rightStick/y",
                     "interactions": "",
@@ -353,6 +386,39 @@
                     "name": "positive",
                     "id": "690460b0-0517-4781-9b3d-9c40baad3ef5",
                     "path": "<Keyboard>/i",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "RightJoystickVertical",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "1D Axis",
+                    "id": "c60cc563-ddd6-4908-b5ff-1d70851d98af",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "RightJoystickVertical",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "negative",
+                    "id": "638f71ff-d452-4ccc-b020-33947072bde7",
+                    "path": "<HID::Logitech WingMan Attack 2>/button3",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "RightJoystickVertical",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "positive",
+                    "id": "48b9607d-cbbf-4d2d-b5d9-dcca5e3546b3",
+                    "path": "<HID::Logitech WingMan Attack 2>/button2",
                     "interactions": "",
                     "processors": "",
                     "groups": "",

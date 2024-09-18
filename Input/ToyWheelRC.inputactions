@@ -146,6 +146,17 @@
                 },
                 {
                     "name": "",
+                    "id": "89cef9c6-6e62-487f-ad67-782640337b84",
+                    "path": "<Joystick>/stick/y",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "TriggerBackForward",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "5f03e8d9-7c19-4047-9b90-25e11aa7e134",
                     "path": "<Gamepad>/leftStick/x",
                     "interactions": "",
@@ -256,6 +267,17 @@
                 },
                 {
                     "name": "",
+                    "id": "223b17a0-cda8-4d4d-a648-f5db0dddb9d0",
+                    "path": "<Joystick>/stick/x",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "WheelLeftRight",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "64b172d5-1002-465a-869a-b87f241d81f3",
                     "path": "<Keyboard>/delete",
                     "interactions": "",
@@ -291,6 +313,17 @@
                     "name": "",
                     "id": "1a49e871-554f-43bc-8ecb-0d7c9bea7aed",
                     "path": "<Gamepad>/dpad/up",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "KillSwitchState",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "d16ab0e8-881f-48f3-bc88-2a0fc1e5aa12",
+                    "path": "<HID::Logitech WingMan Attack 2>/button6",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
