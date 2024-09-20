@@ -59,6 +59,18 @@ public class UI3DMono_StickDroneState : MonoBehaviour
         m_rotateVertical.Rotate(m_rotateAxisVertical, m_maxRotateAngleVertical * m_verticalStatePercent11, Space.Self);
 
     }
-}
 
+
+    public void SetFromDualStickVector2Left(Vector2 left, Vector2 rigth) { 
+        SetPercentHorizontal(left.x);
+            SetPercentVertical(left.y);
+
+    
+    }
+    public void SetFromDualStickVector2Right(Vector2 left, Vector2 rigth)
+    {
+        SetPercentHorizontal(rigth.x);
+        SetPercentVertical(rigth.y);
+    }
+}
 

@@ -57,4 +57,20 @@ public class UI3DMono_WheelGripPad : MonoBehaviour
         m_triggerAnchor.Rotate(Vector3.forward, -m_triggerPressAngle + (m_triggerPushAngle - m_triggerPressAngle) * m_triggerStatePercent11, Space.Self);
        
     }
+
+    public void SetJoystickWithVector2(Vector2 value)
+    {
+        SetWheelPercentState(value.x);
+        SetTriggerPercentState(value.y);
+    }
+    public void SetJoystickWithVector2Left(Vector2 left, Vector2 right)
+    {
+        SetWheelPercentState(left.x);
+        SetTriggerPercentState(left.y);
+    }
+    public void SetJoystickWithVector2Right(Vector2 left, Vector2 right)
+    {
+        SetWheelPercentState(right.x);
+        SetTriggerPercentState(right.y);
+    }
 }
