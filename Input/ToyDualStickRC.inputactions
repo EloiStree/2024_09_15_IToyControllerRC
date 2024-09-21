@@ -512,6 +512,28 @@
                 },
                 {
                     "name": "",
+                    "id": "dca52c46-db1a-45f2-a163-693f4c95ae87",
+                    "path": "<OculusTouchController>{LeftHand}/thumbstick",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "JoystickLeft",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "ca66a2a4-3e92-4016-8aa3-cfc6f64d402d",
+                    "path": "<Gamepad>/leftStick",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "JoystickLeft",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "c2c804ea-9316-45db-8bd3-8d0588997b24",
                     "path": "<WMRSpatialController>{RightHand}/joystick",
                     "interactions": "",
@@ -525,6 +547,28 @@
                     "name": "",
                     "id": "0305b00b-bdeb-40ae-ab73-5a42d99bee60",
                     "path": "<WMRSpatialController>{RightHand}/touchpad",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "JoystickRight",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "0358af6f-41d2-4b4e-8845-63e65c228f94",
+                    "path": "<OculusTouchController>{RightHand}/thumbstick",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "JoystickRight",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "e803722b-a535-46d7-811e-f5d77142ec65",
+                    "path": "<Gamepad>/rightStick",
                     "interactions": "",
                     "processors": "",
                     "groups": "",

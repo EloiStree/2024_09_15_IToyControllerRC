@@ -383,6 +383,28 @@
                     "action": "JoystickLeft",
                     "isComposite": false,
                     "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "dcbc2a82-f85a-4887-9ac9-cd71be7065c2",
+                    "path": "<OculusTouchController>{LeftHand}/thumbstick",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "JoystickLeft",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "a6573693-9265-4ab7-baac-8a30b6f1e5a1",
+                    "path": "<Gamepad>/leftStick",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "JoystickLeft",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         }
