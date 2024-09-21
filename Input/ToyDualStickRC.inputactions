@@ -45,10 +45,28 @@
                     "name": "KillSwitchState",
                     "type": "Button",
                     "id": "37212e93-31cb-4565-98c3-6d0f5d6a4e6c",
-                    "expectedControlType": "Button",
+                    "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "JoystickLeft",
+                    "type": "Value",
+                    "id": "f5ef601c-b51f-47f8-8be1-7daa2ba036af",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "JoystickRight",
+                    "type": "Value",
+                    "id": "fdd97d4c-0089-48cc-90d3-0a850ca3c20d",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
                 }
             ],
             "bindings": [
@@ -467,6 +485,50 @@
                     "processors": "",
                     "groups": "",
                     "action": "KillSwitchState",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "547f3140-e484-4bd5-a042-728b5899f034",
+                    "path": "<XRInputV1::Microsoft::WindowsMRControllerOpenXR>{LeftHand}/joystick",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "JoystickLeft",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "a856c59a-4a5c-4be9-9737-36452ddd7aca",
+                    "path": "<WMRSpatialController>{LeftHand}/touchpad",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "JoystickLeft",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "c2c804ea-9316-45db-8bd3-8d0588997b24",
+                    "path": "<WMRSpatialController>{RightHand}/joystick",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "JoystickRight",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "0305b00b-bdeb-40ae-ab73-5a42d99bee60",
+                    "path": "<WMRSpatialController>{RightHand}/touchpad",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "JoystickRight",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

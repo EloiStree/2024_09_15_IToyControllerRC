@@ -31,6 +31,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "JoystickLeft",
+                    "type": "Value",
+                    "id": "8d742350-bd2a-45b7-8140-439fc5aab387",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
                 }
             ],
             "bindings": [
@@ -157,8 +166,8 @@
                 },
                 {
                     "name": "",
-                    "id": "3dc30e2e-0fa2-4e0e-937d-5de95b6c66ac",
-                    "path": "",
+                    "id": "29d189c6-ee09-4116-a69b-950af7c0b445",
+                    "path": "<WMRSpatialController>{LeftHand}/joystick/up",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -289,6 +298,17 @@
                 },
                 {
                     "name": "",
+                    "id": "27478f73-72d5-4ca7-9cba-47bfae7f50ae",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "WheelLeftRight",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "64b172d5-1002-465a-869a-b87f241d81f3",
                     "path": "<Keyboard>/delete",
                     "interactions": "",
@@ -339,6 +359,28 @@
                     "processors": "",
                     "groups": "",
                     "action": "KillSwitchState",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "0abdb9d6-56b1-421c-95cf-f2bd935db40c",
+                    "path": "<WMRSpatialController>{LeftHand}/joystick",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "JoystickLeft",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "ddee33c8-cca9-4297-8736-730e322d1a87",
+                    "path": "<WMRSpatialController>{LeftHand}/touchpad",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "JoystickLeft",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
