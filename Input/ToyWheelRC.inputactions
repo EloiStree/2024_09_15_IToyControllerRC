@@ -157,6 +157,17 @@
                 },
                 {
                     "name": "",
+                    "id": "3dc30e2e-0fa2-4e0e-937d-5de95b6c66ac",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "TriggerBackForward",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "5f03e8d9-7c19-4047-9b90-25e11aa7e134",
                     "path": "<Gamepad>/leftStick/x",
                     "interactions": "",
