@@ -10,10 +10,10 @@ public class UI3DMono_StickDroneState : MonoBehaviour
     public Transform m_rotateVertical;
     public Vector3 m_rotateAxisVertical = Vector3.right;
 
-    public float m_maxRotateAngleHorizontal= 30;
+    public float m_maxRotateAngleHorizontal = 30;
     public float m_maxRotateAngleVertical = 35;
 
-    [Range(-1,1)]
+    [Range(-1, 1)]
     public float m_horizontalStatePercent11 = 0.0f;
 
 
@@ -24,18 +24,19 @@ public class UI3DMono_StickDroneState : MonoBehaviour
     public bool m_useUpdateToRefreshUI = true;
 
     [ContextMenu("Set Random State")]
-    public void SetRandomState() { 
-    
+    public void SetRandomState()
+    {
+
         SetPercentHorizontal(Random.Range(-1.0f, 1.0f));
         SetPercentVertical(Random.Range(-1.0f, 1.0f));
         RefreshUI();
     }
 
-    
+
 
     public void SetPercentHorizontal(float percent11)
     {
-        m_horizontalStatePercent11 = percent11; 
+        m_horizontalStatePercent11 = percent11;
         RefreshUI();
     }
     public void SetPercentVertical(float percent11)
@@ -46,7 +47,7 @@ public class UI3DMono_StickDroneState : MonoBehaviour
 
     void Update()
     {
-        if(m_useUpdateToRefreshUI)
+        if (m_useUpdateToRefreshUI)
             RefreshUI();
     }
 
@@ -61,11 +62,12 @@ public class UI3DMono_StickDroneState : MonoBehaviour
     }
 
 
-    public void SetFromDualStickVector2Left(Vector2 left, Vector2 rigth) { 
+    public void SetFromDualStickVector2Left(Vector2 left, Vector2 rigth)
+    {
         SetPercentHorizontal(left.x);
-            SetPercentVertical(left.y);
+        SetPercentVertical(left.y);
 
-    
+
     }
     public void SetFromDualStickVector2Right(Vector2 left, Vector2 rigth)
     {
