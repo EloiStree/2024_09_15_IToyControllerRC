@@ -114,6 +114,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2182800458755937905}
+  - component: {fileID: 861433995794688193}
   m_Layer: 0
   m_Name: Dual Joystick Gamepad 3D
   m_TagString: Untagged
@@ -139,6 +140,20 @@ Transform:
   - {fileID: 3752097109790082453}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &861433995794688193
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 876067763134301219}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a69952804b1d1714aaf3748826765561, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_left: {fileID: 8919606935263566821}
+  m_right: {fileID: 3243123843195181800}
 --- !u!1001 &4464165369544928990
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -207,6 +222,18 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 318d0d3efd91fa5478dc164ab33c479a, type: 3}
+--- !u!114 &3243123843195181800 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1221044167760475190, guid: 318d0d3efd91fa5478dc164ab33c479a,
+    type: 3}
+  m_PrefabInstance: {fileID: 4464165369544928990}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 519ab7743998edf4f95aafd3a27e6db8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &7231076406305543324 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6461002375084620354, guid: 318d0d3efd91fa5478dc164ab33c479a,
@@ -287,3 +314,15 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 7726710265241284563}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &8919606935263566821 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1221044167760475190, guid: 318d0d3efd91fa5478dc164ab33c479a,
+    type: 3}
+  m_PrefabInstance: {fileID: 7726710265241284563}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 519ab7743998edf4f95aafd3a27e6db8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

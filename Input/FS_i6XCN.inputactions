@@ -1,0 +1,94 @@
+{
+    "name": "FS_i6XCN",
+    "maps": [
+        {
+            "name": "FS-i6XCN Right",
+            "id": "4c6da00b-ba0e-4612-a115-9afd66adaa2a",
+            "actions": [
+                {
+                    "name": "RightHorizontal",
+                    "type": "Value",
+                    "id": "e1fd5249-c647-476d-823c-9d6a44cb0612",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "RightVertical",
+                    "type": "Value",
+                    "id": "92fe3200-ef52-4f13-81ef-7708654648bc",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "LeftHorizontal",
+                    "type": "Value",
+                    "id": "4485ade1-67b6-465c-a848-8708ac7e488f",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "LeftVertical",
+                    "type": "Value",
+                    "id": "c9ae7112-e857-455a-8de7-f68038019cc3",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "00d75187-c691-4bb5-a90a-ec76a0af44a6",
+                    "path": "<HID::Flysky Flysky FS-i6XCN>/stick/x",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "RightHorizontal",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "3391068f-eaed-4f9e-8cad-31d4d3066e51",
+                    "path": "<HID::Flysky Flysky FS-i6XCN>/stick/y",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "RightVertical",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "65cc1308-f2e6-41a2-8423-84ba52b5f4cb",
+                    "path": "<HID::Flysky Flysky FS-i6XCN>/rx",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "LeftHorizontal",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "b24699b6-c112-410d-a417-42ed4d0d591f",
+                    "path": "<HID::Flysky Flysky FS-i6XCN>/z",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "LeftVertical",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}

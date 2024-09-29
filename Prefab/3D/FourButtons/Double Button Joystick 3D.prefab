@@ -88,6 +88,13 @@ MonoBehaviour:
   m_maxRotateAngleVertical: 35
   m_verticalStatePercent11: 0
   m_useUpdateToRefreshUI: 1
+  m_buttonHeightOn: 0.2
+  m_buttonHeightOff: 0.5
+  m_buttonUp: {fileID: 71501428348224945}
+  m_buttonDown: {fileID: 5470657003677911786}
+  m_buttonUpIsOn: 0
+  m_buttonDownIsOn: 0
+  m_buttonLocalDirection: {x: 0, y: 1, z: 0}
 --- !u!1001 &537264635596530266
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -149,7 +156,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 3e30b6b9d2763fa4da3ef081198290ee,
         type: 3}
       propertyPath: m_Name
-      value: ButtonTip (1)
+      value: ButtonTip Up
       objectReference: {fileID: 0}
     - target: {fileID: 8066077690548016097, guid: 3e30b6b9d2763fa4da3ef081198290ee,
         type: 3}
@@ -544,7 +551,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 3e30b6b9d2763fa4da3ef081198290ee,
         type: 3}
       propertyPath: m_Name
-      value: ButtonTip
+      value: ButtonTip Down
       objectReference: {fileID: 0}
     - target: {fileID: 8066077690548016097, guid: 3e30b6b9d2763fa4da3ef081198290ee,
         type: 3}

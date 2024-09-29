@@ -72,47 +72,14 @@
             "bindings": [
                 {
                     "name": "",
-                    "id": "8077b5f0-b4d9-4764-b529-77742a0572fc",
-                    "path": "<Gamepad>/leftStick/x",
+                    "id": "eefa9f89-2d84-45c8-b105-7b6d6d2b91fd",
+                    "path": "<HID::Flysky Flysky FS-i6XCN>/rx",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
                     "action": "LeftJoystickHorizontal",
                     "isComposite": false,
                     "isPartOfComposite": false
-                },
-                {
-                    "name": "1D Axis",
-                    "id": "09434e7e-f77a-44fe-8919-1f9149eb732f",
-                    "path": "1DAxis",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "LeftJoystickHorizontal",
-                    "isComposite": true,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "negative",
-                    "id": "29e8a045-aa59-4498-bce4-7bb0a8f124e9",
-                    "path": "<Keyboard>/g",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "LeftJoystickHorizontal",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "positive",
-                    "id": "21962332-8394-4a07-b7bd-1737d3811adc",
-                    "path": "<Keyboard>/t",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "LeftJoystickHorizontal",
-                    "isComposite": false,
-                    "isPartOfComposite": true
                 },
                 {
                     "name": "1D Axis",
@@ -148,9 +115,31 @@
                     "isPartOfComposite": true
                 },
                 {
+                    "name": "negative",
+                    "id": "29e8a045-aa59-4498-bce4-7bb0a8f124e9",
+                    "path": "<Keyboard>/g",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "LeftJoystickHorizontal",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "positive",
+                    "id": "21962332-8394-4a07-b7bd-1737d3811adc",
+                    "path": "<Keyboard>/t",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "LeftJoystickHorizontal",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
                     "name": "",
-                    "id": "9b382572-f55c-4ec2-901e-5319c404f1c4",
-                    "path": "<Joystick>/stick/x",
+                    "id": "8077b5f0-b4d9-4764-b529-77742a0572fc",
+                    "path": "<Gamepad>/leftStick/x",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -160,47 +149,14 @@
                 },
                 {
                     "name": "",
-                    "id": "900e8bbf-7fe5-4f08-9a76-52c6cd1eb68d",
-                    "path": "<Gamepad>/leftStick/y",
+                    "id": "85b73034-89d0-4565-8d2e-6fa1a61eeb16",
+                    "path": "<HID::Flysky Flysky FS-i6XCN>/z",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
                     "action": "LeftJoystickVertical",
                     "isComposite": false,
                     "isPartOfComposite": false
-                },
-                {
-                    "name": "1D Axis",
-                    "id": "01a327a8-0b0a-4c3d-8e41-66bcbc3ceee4",
-                    "path": "1DAxis",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "LeftJoystickVertical",
-                    "isComposite": true,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "negative",
-                    "id": "cb14b607-ad94-45dd-b8d1-4369694ec752",
-                    "path": "<Keyboard>/f",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "LeftJoystickVertical",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "positive",
-                    "id": "e62e4ee6-9a98-4413-baf9-87b8972655ce",
-                    "path": "<Keyboard>/h",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "LeftJoystickVertical",
-                    "isComposite": false,
-                    "isPartOfComposite": true
                 },
                 {
                     "name": "1D Axis",
@@ -236,59 +192,37 @@
                     "isPartOfComposite": true
                 },
                 {
+                    "name": "negative",
+                    "id": "cb14b607-ad94-45dd-b8d1-4369694ec752",
+                    "path": "<Keyboard>/f",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "LeftJoystickVertical",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "positive",
+                    "id": "e62e4ee6-9a98-4413-baf9-87b8972655ce",
+                    "path": "<Keyboard>/h",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "LeftJoystickVertical",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
                     "name": "",
-                    "id": "9ac2036d-d798-49a8-948c-8ee0928e9da3",
-                    "path": "<Joystick>/stick/y",
+                    "id": "900e8bbf-7fe5-4f08-9a76-52c6cd1eb68d",
+                    "path": "<Gamepad>/leftStick/y",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
                     "action": "LeftJoystickVertical",
                     "isComposite": false,
                     "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "5b9ffa38-b9c2-4154-9470-d811b9f2709f",
-                    "path": "<Gamepad>/rightStick/x",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "RightJoystickHorizontal",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "1D Axis",
-                    "id": "4bd8b862-2f21-4e01-9f98-35b9a0fc8dc8",
-                    "path": "1DAxis",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "RightJoystickHorizontal",
-                    "isComposite": true,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "negative",
-                    "id": "a9aab31c-f26b-47e3-ae0a-f6b1d94af023",
-                    "path": "<Keyboard>/j",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "RightJoystickHorizontal",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "positive",
-                    "id": "9e4f980a-325b-422f-8c3a-5d5ce38c3a1e",
-                    "path": "<Keyboard>/l",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "RightJoystickHorizontal",
-                    "isComposite": false,
-                    "isPartOfComposite": true
                 },
                 {
                     "name": "1D Axis",
@@ -324,9 +258,31 @@
                     "isPartOfComposite": true
                 },
                 {
+                    "name": "negative",
+                    "id": "a9aab31c-f26b-47e3-ae0a-f6b1d94af023",
+                    "path": "<Keyboard>/j",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "RightJoystickHorizontal",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "positive",
+                    "id": "9e4f980a-325b-422f-8c3a-5d5ce38c3a1e",
+                    "path": "<Keyboard>/l",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "RightJoystickHorizontal",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
                     "name": "",
-                    "id": "fac8003f-6ba0-4eec-b935-ee226467083f",
-                    "path": "<HID::Logitech WingMan Attack 2>/z",
+                    "id": "5b9ffa38-b9c2-4154-9470-d811b9f2709f",
+                    "path": "<Gamepad>/rightStick/x",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -336,47 +292,14 @@
                 },
                 {
                     "name": "",
-                    "id": "6d8ea5c8-f672-441d-b184-fe33a5e6706d",
-                    "path": "<Gamepad>/rightStick/y",
+                    "id": "fac8003f-6ba0-4eec-b935-ee226467083f",
+                    "path": "<HID::Logitech WingMan Attack 2>/z",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "RightJoystickVertical",
+                    "action": "RightJoystickHorizontal",
                     "isComposite": false,
                     "isPartOfComposite": false
-                },
-                {
-                    "name": "1D Axis",
-                    "id": "96e7ec03-e368-4c55-803d-ea197d8cdb34",
-                    "path": "1DAxis",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "RightJoystickVertical",
-                    "isComposite": true,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "negative",
-                    "id": "87c07873-d425-4143-b760-ff5bdf84686c",
-                    "path": "<Keyboard>/numpad5",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "RightJoystickVertical",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "positive",
-                    "id": "c46c0d8c-7bc8-4ede-b272-dde75c6f5910",
-                    "path": "<Keyboard>/numpad8",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "RightJoystickVertical",
-                    "isComposite": false,
-                    "isPartOfComposite": true
                 },
                 {
                     "name": "1D Axis",
@@ -412,17 +335,6 @@
                     "isPartOfComposite": true
                 },
                 {
-                    "name": "1D Axis",
-                    "id": "c60cc563-ddd6-4908-b5ff-1d70851d98af",
-                    "path": "1DAxis",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "RightJoystickVertical",
-                    "isComposite": true,
-                    "isPartOfComposite": false
-                },
-                {
                     "name": "negative",
                     "id": "638f71ff-d452-4ccc-b020-33947072bde7",
                     "path": "<HID::Logitech WingMan Attack 2>/button3",
@@ -443,6 +355,39 @@
                     "action": "RightJoystickVertical",
                     "isComposite": false,
                     "isPartOfComposite": true
+                },
+                {
+                    "name": "negative",
+                    "id": "87c07873-d425-4143-b760-ff5bdf84686c",
+                    "path": "<Keyboard>/numpad5",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "RightJoystickVertical",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "positive",
+                    "id": "c46c0d8c-7bc8-4ede-b272-dde75c6f5910",
+                    "path": "<Keyboard>/numpad8",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "RightJoystickVertical",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "6d8ea5c8-f672-441d-b184-fe33a5e6706d",
+                    "path": "<Gamepad>/rightStick/y",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "RightJoystickVertical",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 },
                 {
                     "name": "",
@@ -481,6 +426,17 @@
                     "name": "",
                     "id": "fd1f8b4f-5f93-4ad7-b37f-de0df98f09c4",
                     "path": "<Gamepad>/dpad/up",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "KillSwitchState",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "86f247bf-abf6-40ee-973d-4396df35192f",
+                    "path": "<HID::Flysky Flysky FS-i6XCN>/trigger",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -533,6 +489,61 @@
                     "isPartOfComposite": false
                 },
                 {
+                    "name": "2D Vector",
+                    "id": "5fe71c5f-86af-4d48-9634-2c2eba8e6cb0",
+                    "path": "2DVector",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "JoystickLeft",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "up",
+                    "id": "7bebdd2e-4279-45d1-9510-4c2998505ee9",
+                    "path": "<HID::Flysky Flysky FS-i6XCN>/z",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "JoystickLeft",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "down",
+                    "id": "74cffc60-7037-4fa2-916f-35b34d9eb0f3",
+                    "path": "<HID::Flysky Flysky FS-i6XCN>/z",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "JoystickLeft",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "left",
+                    "id": "20deae7c-188e-4ca8-afc0-bb6c30cef0ee",
+                    "path": "<HID::Flysky Flysky FS-i6XCN>/rx",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "JoystickLeft",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "right",
+                    "id": "b000db3e-dea7-408a-ad8b-80e4ee177537",
+                    "path": "<HID::Flysky Flysky FS-i6XCN>/rx",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "JoystickLeft",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
                     "name": "",
                     "id": "c2c804ea-9316-45db-8bd3-8d0588997b24",
                     "path": "<WMRSpatialController>{RightHand}/joystick",
@@ -569,6 +580,17 @@
                     "name": "",
                     "id": "e803722b-a535-46d7-811e-f5d77142ec65",
                     "path": "<Gamepad>/rightStick",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "JoystickRight",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "9514cffa-0893-46aa-bdb6-fbed6dc40756",
+                    "path": "<HID::Flysky Flysky FS-i6XCN>/stick",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
