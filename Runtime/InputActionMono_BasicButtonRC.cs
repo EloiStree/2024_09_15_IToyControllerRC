@@ -5,7 +5,9 @@ using UnityEngine.UI;
 
 public class InputActionMono_BasicButtonRC : MonoBehaviour {
 
-    public UnityEvent<bool> m_onButtonOn;
+    public UnityEvent<bool> m_onButtonChanged;
+    public UnityEvent m_onButtonDownChanged;
+    public UnityEvent m_onButtonUpChanged;
     public InputActionReference m_buttonReference;
 
     public bool m_valueIsOn;
@@ -33,7 +35,15 @@ public class InputActionMono_BasicButtonRC : MonoBehaviour {
         if (value != m_valueIsOn)
         {
             m_valueIsOn = value;
-            m_onButtonOn.Invoke(value);
+            m_onButtonChanged.Invoke(value);
+            if (value)
+            {
+                m_onButtonDownChanged.Invoke();
+            }
+            else
+            {
+                m_onButtonUpChanged.Invoke();
+            }
         }
     }
 }

@@ -1,18 +1,56 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class DualStickArraySelectorMono : DualStickRcStateWithEventMono
 {
+    [Header("Must have components of I_CanBeSetWithDualSticks")]
+    public GameObject [] m_dualSticksGroup;
+    public List<I_CanBeSetWithDualSticks> m_compatiableList= new List<I_CanBeSetWithDualSticks>();
+    public int m_compatiableCount=0;
 
-    public A_DualStickRcStateMono[] m_dualSticksGroup;
     public int m_index = 0;
+
+    private void Awake()
+    {
+        RefreshList();
+    }
+
+    private void RefreshList()
+    {
+        m_compatiableList.Clear();
+        foreach(var item in m_dualSticksGroup)
+            {
+            if (item == null)
+                continue;
+            var list = item.GetComponents<I_CanBeSetWithDualSticks>();
+
+            if (list == null)
+                continue;
+
+            if(list.Length==0)
+                list= item.GetComponentsInChildren<I_CanBeSetWithDualSticks>();
+
+            if(list.Length == 0)
+                continue;
+
+            foreach (var item2 in list)
+            {
+                if (item2 == null)
+                    continue;
+                m_compatiableList.Add(item2);
+
+            }
+        }
+        m_compatiableCount = m_compatiableList.Count;
+    }
 
     [ContextMenu("Next")]
     public void Next()
     {
         m_index++;
-        if (m_index >= m_dualSticksGroup.Length)
+        if (m_index >= m_compatiableList.Count)
         {
             m_index = 0;
         }
@@ -23,81 +61,84 @@ public class DualStickArraySelectorMono : DualStickRcStateWithEventMono
         m_index--;
         if (m_index < 0)
         {
-            m_index = m_dualSticksGroup.Length - 1;
+            m_index = m_compatiableList.Count - 1;
         }
     }
 
-
        
-    public override void SetJoystickLeftHorizontal(float percent11)
+    public new void SetJoystickLeftHorizontal(float percent11)
     {
         if (!IsExistingAndInRange())return;
-        m_dualSticksGroup[m_index].SetJoystickLeftHorizontal(percent11);
         base.SetJoystickLeftHorizontal(percent11);
+        m_compatiableList[m_index].SetWith(this);
     }
-    public override void SetJoystickLeftVertical(float percent11)
+    public new void SetJoystickLeftVertical(float percent11)
     {
         if (!IsExistingAndInRange())return;
-        m_dualSticksGroup[m_index].SetJoystickLeftVertical(percent11);
         base.SetJoystickLeftVertical(percent11);
+        m_compatiableList[m_index].SetWith(this);
     }
-    public override void SetJoystickRightHorizontal(float percent11)
+    public new void SetJoystickRightHorizontal(float percent11)
     {
-        if (!IsExistingAndInRange())return;
-        m_dualSticksGroup[m_index].SetJoystickRightHorizontal(percent11);
+        if (!IsExistingAndInRange()) return;
         base.SetJoystickRightHorizontal(percent11);
+        m_compatiableList[m_index].SetWith(this);
     }
-    public override void SetJoystickRightVertical(float percent11)
+    public new void SetJoystickRightVertical(float percent11)
     {
         if (!IsExistingAndInRange())return;
-        m_dualSticksGroup[m_index].SetJoystickRightVertical(percent11);
         base.SetJoystickRightVertical(percent11);
+        m_compatiableList[m_index].SetWith(this);
     }
 
-    public override void SetKillSwitchAsActive(bool killSwitch)
+    public new void SetKillSwitchAsActive(bool killSwitch)
     {
         if (!IsExistingAndInRange())return;
-        m_dualSticksGroup[m_index].SetKillSwitchAsActive(killSwitch);
         base.SetKillSwitchAsActive(killSwitch);
+        m_compatiableList[m_index].SetWith(this);
+
     }
 
-    public override void GetJoystickLeftHorizontal(out float percent11)
+    public new void GetJoystickLeftHorizontal(out float percent11)
     {
         percent11 = 0;
         if (!IsExistingAndInRange())return;
-        m_dualSticksGroup[m_index].GetJoystickLeftHorizontal(out percent11);
+        base.GetJoystickLeftHorizontal(out percent11);
     }
-    public override void GetJoystickLeftVertical(out float percent11)
+    public new void GetJoystickLeftVertical(out float percent11)
     {
         percent11 = 0;
         if (!IsExistingAndInRange())return;
-        m_dualSticksGroup[m_index].GetJoystickLeftVertical(out percent11);
+        base.GetJoystickLeftVertical(out percent11);
     }
-    public override void GetJoystickRightHorizontal(out float percent11)
+    public new void GetJoystickRightHorizontal(out float percent11)
     {
         percent11 = 0;
         if (!IsExistingAndInRange())return;
-        m_dualSticksGroup[m_index].GetJoystickRightHorizontal(out percent11);
+        GetJoystickRightHorizontal(out percent11);
     }
-    public override void GetJoystickRightVertical(out float percent11)
+    public new void GetJoystickRightVertical(out float percent11)
     {
         percent11 = 0;
         if (!IsExistingAndInRange())return;
-        m_dualSticksGroup[m_index].GetJoystickRightVertical(out percent11);
+        GetJoystickRightVertical(out percent11);
     }
 
-    public override void IsKillSwitchActive(out bool killSwitch)
+    public new void IsKillSwitchActive(out bool killSwitch)
     {
         killSwitch = false;
         if (!IsExistingAndInRange())return;
-        m_dualSticksGroup[m_index].IsKillSwitchActive(out killSwitch);
+        IsKillSwitchActive(out killSwitch);
     }
 
 
 
     private bool IsExistingAndInRange()
     {
-        return m_dualSticksGroup.Length>= 0 && m_index>-1 && m_index< m_dualSticksGroup.Length && m_dualSticksGroup[m_index] != null ;
+        return m_compatiableList.Count>= 0
+            && m_index>-1 
+            && m_index< m_compatiableList.Count 
+            && m_compatiableList[m_index] != null ;
 
     }
 

@@ -63,6 +63,20 @@ public class DualStickRcStateMono :  A_DualStickRcStateMono
     {
         return m_dualStickRcState.m_killSwitchValue;
     }
+
+    public override void SetWith(I_DualStickRcStateGet dualStick)
+    {
+        dualStick.GetJoystickLeftHorizontal(out float percent11);
+        SetJoystickLeftHorizontal(percent11);
+        dualStick.GetJoystickLeftVertical(out percent11);
+        SetJoystickLeftVertical(percent11);
+        dualStick.GetJoystickRightHorizontal(out percent11);
+        SetJoystickRightHorizontal(percent11);
+        dualStick.GetJoystickRightVertical(out percent11);
+        SetJoystickRightVertical(percent11);
+        dualStick.IsKillSwitchActive(out bool killSwitch);
+        SetKillSwitchAsActive(killSwitch);
+    }
 }
 
 [System.Serializable]
@@ -101,7 +115,7 @@ public interface I_DualStickRcStateGet
 
 }
 
-public interface I_DualStickRcStateSetGet : I_DualStickRcStateSet, I_DualStickRcStateGet
+public interface I_DualStickRcStateSetGet : I_DualStickRcStateSet, I_DualStickRcStateGet, I_CanBeSetWithDualSticks
 {
 }
 
@@ -118,4 +132,11 @@ public abstract class A_DualStickRcStateMono : MonoBehaviour,  I_DualStickRcStat
     public abstract void GetJoystickRightVertical(out float percent11);
     public abstract void IsKillSwitchActive(out bool killSwitch);
     public abstract bool IsKillSwitchActive();
+    public abstract void SetWith(I_DualStickRcStateGet dualStick);
+}
+
+
+public interface I_CanBeSetWithDualSticks
+{
+    void SetWith(I_DualStickRcStateGet dualStick);
 }
