@@ -4,7 +4,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.InputSystem;
-using static Codice.Client.Common.Servers.RecentlyUsedServers;
 
 public class FSi6XCNRightMono : MonoBehaviour
 {
