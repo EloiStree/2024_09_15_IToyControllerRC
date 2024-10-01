@@ -1,0 +1,76 @@
+{
+    "name": "ToyNextPrevious",
+    "maps": [
+        {
+            "name": "SelectionNextPrevious",
+            "id": "3b57312c-9a22-43f9-acb0-9f77696410f6",
+            "actions": [
+                {
+                    "name": "SelectionNext",
+                    "type": "Button",
+                    "id": "4a771f3e-a55e-4665-991c-f76f080f116d",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "SelectionPrevious",
+                    "type": "Button",
+                    "id": "fc290a12-c780-4a5c-ab4f-e1ced7fcbb4e",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "18bde228-1bd5-4337-87b2-71a59457d8f8",
+                    "path": "<Keyboard>/equals",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "SelectionNext",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "5d9cda3f-00f7-4f24-9aee-16e2057e4297",
+                    "path": "<Gamepad>/leftShoulder",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "SelectionNext",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "08759d3c-f644-4f9c-a344-9879d7130004",
+                    "path": "<Keyboard>/minus",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "SelectionPrevious",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "e753b107-1fc8-44e6-979a-0e1ce267927a",
+                    "path": "<Gamepad>/rightShoulder",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "SelectionPrevious",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}

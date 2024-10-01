@@ -26,12 +26,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 263219608381172912}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.0027591707, y: 0.09207096, z: -0.037732013}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 427251597043868293}
+  - {fileID: 9183557775492473045}
+  - {fileID: 4161249080463185023}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &8326665032294722775
@@ -79,11 +81,35 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: DualStickArraySelectorMono, be.elab.irctoy
+        m_MethodName: SetJoystickLeftHorizontal
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_onJoystickLeftVertical:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 8326665032294722775}
         m_TargetAssemblyTypeName: DualStickRcStateMono, Assembly-CSharp
+        m_MethodName: SetJoystickLeftVertical
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: DualStickArraySelectorMono, be.elab.irctoy
         m_MethodName: SetJoystickLeftVertical
         m_Mode: 0
         m_Arguments:
@@ -109,11 +135,35 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: DualStickArraySelectorMono, be.elab.irctoy
+        m_MethodName: SetJoystickRightHorizontal
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_onJoystickRightVertical:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 8326665032294722775}
         m_TargetAssemblyTypeName: DualStickRcStateMono, Assembly-CSharp
+        m_MethodName: SetJoystickRightVertical
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: DualStickArraySelectorMono, be.elab.irctoy
         m_MethodName: SetJoystickRightVertical
         m_Mode: 0
         m_Arguments:
@@ -154,6 +204,131 @@ MonoBehaviour:
   m_joystickRightHorizontalValue: 0
   m_joystickRightVerticalValue: 0
   m_killSwitchValue: 0
+--- !u!1 &3671843153188726756
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 9183557775492473045}
+  - component: {fileID: 8998657976252289855}
+  - component: {fileID: 5345853785054515178}
+  m_Layer: 0
+  m_Name: Joystick 2D
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &9183557775492473045
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3671843153188726756}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2864748028096765390}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8998657976252289855
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3671843153188726756}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6549d2dec0295494b8d689e65089bb92, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_onJoystickX:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8326665032294722775}
+        m_TargetAssemblyTypeName: DualStickRcStateMono, be.elab.irctoy
+        m_MethodName: SetJoystickLeftHorizontal
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_onJoystickY:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8326665032294722775}
+        m_TargetAssemblyTypeName: DualStickRcStateMono, be.elab.irctoy
+        m_MethodName: SetJoystickLeftVertical
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_joystickReference: {fileID: 8684686215986822645, guid: c9746e4dd5a76f8438cde4c799afdd59,
+    type: 3}
+  m_joystickXValue: 0
+  m_joystickYValue: 0
+--- !u!114 &5345853785054515178
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3671843153188726756}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6549d2dec0295494b8d689e65089bb92, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_onJoystickX:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8326665032294722775}
+        m_TargetAssemblyTypeName: DualStickRcStateMono, be.elab.irctoy
+        m_MethodName: SetJoystickRightHorizontal
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_onJoystickY:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8326665032294722775}
+        m_TargetAssemblyTypeName: DualStickRcStateMono, be.elab.irctoy
+        m_MethodName: SetJoystickRightVertical
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_joystickReference: {fileID: 1485761058315771855, guid: c9746e4dd5a76f8438cde4c799afdd59,
+    type: 3}
+  m_joystickXValue: 0
+  m_joystickYValue: 0
 --- !u!1 &4417990984029469006
 GameObject:
   m_ObjectHideFlags: 0
@@ -276,3 +451,188 @@ MonoBehaviour:
   m_joystickRightVerticalPercent: 0
   m_adjustementHorizontal: 0.69
   m_adjustementVertical: 0.69
+--- !u!1 &6265742273213500332
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4161249080463185023}
+  - component: {fileID: 4285018466404096574}
+  - component: {fileID: 6788447266611597639}
+  m_Layer: 0
+  m_Name: Previous Next Default
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4161249080463185023
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6265742273213500332}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1974493584804652150}
+  m_Father: {fileID: 2864748028096765390}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4285018466404096574
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6265742273213500332}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bdf2269b6e31a64ca0735d07c9f0e45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_onButtonOn:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: DualStickArraySelectorMono, be.elab.irctoy
+        m_MethodName: Next
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_buttonReference: {fileID: -1424601391862418708, guid: dd9cd278d50597641a1383f6785a9cb0,
+    type: 3}
+  m_valueIsOn: 0
+--- !u!114 &6788447266611597639
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6265742273213500332}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bdf2269b6e31a64ca0735d07c9f0e45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_onButtonOn:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: DualStickArraySelectorMono, be.elab.irctoy
+        m_MethodName: Previous
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_buttonReference: {fileID: 5435521423202843294, guid: dd9cd278d50597641a1383f6785a9cb0,
+    type: 3}
+  m_valueIsOn: 0
+--- !u!1 &9088313263768230290
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1974493584804652150}
+  - component: {fileID: 4803327848656450612}
+  - component: {fileID: 241175619408918011}
+  m_Layer: 0
+  m_Name: 'XR '
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1974493584804652150
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9088313263768230290}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4161249080463185023}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4803327848656450612
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9088313263768230290}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bdf2269b6e31a64ca0735d07c9f0e45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_onButtonOn:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: DualStickArraySelectorMono, be.elab.irctoy
+        m_MethodName: Next
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_buttonReference: {fileID: 0}
+  m_valueIsOn: 0
+--- !u!114 &241175619408918011
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9088313263768230290}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bdf2269b6e31a64ca0735d07c9f0e45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_onButtonOn:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: DualStickArraySelectorMono, be.elab.irctoy
+        m_MethodName: Previous
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_buttonReference: {fileID: 0}
+  m_valueIsOn: 0
