@@ -58,6 +58,15 @@ public class UI3DMono_WheelGripPad : MonoBehaviour
        
     }
 
+    
+    public void SetWith(I_WheelRcStateGet source) { 
+    
+        source.GetWheelLeftRight(out float wheelLeftRight);
+        source.GetTriggerBackForward(out float triggerBackForward);
+        SetWheelPercentState(wheelLeftRight);
+        SetTriggerPercentState(triggerBackForward);
+    }
+
     public void SetJoystickWithVector2(Vector2 value)
     {
         SetWheelPercentState(value.x);

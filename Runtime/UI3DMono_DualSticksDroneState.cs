@@ -5,6 +5,21 @@ public class UI3DMono_DualSticksDroneState : MonoBehaviour
     public UI3DMono_StickDroneState m_left;
     public UI3DMono_StickDroneState m_right;
 
+
+    public void SetWith(I_DualStickRcStateGet source)
+    {
+        source.GetJoystickLeftHorizontal(out float joystickLeftHorizontal);
+        source.GetJoystickLeftVertical(out float joystickLeftVertical);
+        source.GetJoystickRightHorizontal(out float joystickRightHorizontal);
+        source.GetJoystickRightVertical(out float joystickRightVertical);
+        source.IsKillSwitchActive(out bool killSwitch);
+        SetLeftHorizontal(joystickLeftHorizontal);
+        SetLeftVertical(joystickLeftVertical);
+        SetRightHorizontal(joystickRightHorizontal);
+        SetRightVertical(joystickRightVertical);
+
+    }
+
     public void SetFromDualStickVector2(Vector2 left, Vector2 rigth)
     {
         m_left.SetFromDualStickVector2Left(left, rigth);

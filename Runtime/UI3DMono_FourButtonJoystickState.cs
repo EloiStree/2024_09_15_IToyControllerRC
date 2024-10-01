@@ -65,6 +65,16 @@ public class UI3DMono_FourButtonJoystickState : MonoBehaviour
         m_rightJoystick.SetPercentVertical(isOn ? -1 : 0);
     }
 
+
+    public void SetWith(I_FourButtonsRcStateGet source)
+    {
+        source.GetLeftUpButtonAsDown(out bool leftUp);
+        source.GetLeftDownButtonAsDown(out bool leftDown);
+        source.GetRightUpButtonAsDown(out bool rightUp);
+        source.GetRightDownButtonAsDown(out bool rightDown);
+
+        SetFourButtons(leftUp, leftDown, rightUp, rightDown);
+    }
 }
 
 
