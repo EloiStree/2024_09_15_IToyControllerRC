@@ -149,6 +149,17 @@
                 },
                 {
                     "name": "",
+                    "id": "819793a5-27be-4711-a241-4a2661dac639",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "LeftJoystickHorizontal",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "85b73034-89d0-4565-8d2e-6fa1a61eeb16",
                     "path": "<HID::Flysky Flysky FS-i6XCN>/z",
                     "interactions": "",
