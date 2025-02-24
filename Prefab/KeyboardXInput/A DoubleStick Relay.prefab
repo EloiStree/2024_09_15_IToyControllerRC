@@ -1,0 +1,229 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2141410889049071001
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 9079419958255755370}
+  - component: {fileID: 1655282516263868961}
+  m_Layer: 0
+  m_Name: Input
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &9079419958255755370
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2141410889049071001}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 9013675859635248356}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1655282516263868961
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2141410889049071001}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 763bf8d259ed66440b86c699e904b7ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_onJoystickLeftHorizontal:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 3698870486958858649}
+        m_TargetAssemblyTypeName: DualStickRcStateMono, Assembly-CSharp
+        m_MethodName: SetJoystickLeftHorizontal
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_onJoystickLeftVertical:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 3698870486958858649}
+        m_TargetAssemblyTypeName: DualStickRcStateMono, Assembly-CSharp
+        m_MethodName: SetJoystickLeftVertical
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_onJoystickRightHorizontal:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 3698870486958858649}
+        m_TargetAssemblyTypeName: DualStickRcStateMono, Assembly-CSharp
+        m_MethodName: SetJoystickRightHorizontal
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_onJoystickRightVertical:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 3698870486958858649}
+        m_TargetAssemblyTypeName: DualStickRcStateMono, Assembly-CSharp
+        m_MethodName: SetJoystickRightVertical
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_onKillSwitchChanged:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 3698870486958858649}
+        m_TargetAssemblyTypeName: DualStickRcStateMono, Assembly-CSharp
+        m_MethodName: SetKillSwitchAsActive
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_josytickLeftHorizontalReference: {fileID: 216737475167264124, guid: c9746e4dd5a76f8438cde4c799afdd59, type: 3}
+  m_josytickLeftVerticalReference: {fileID: -7741307542077827967, guid: c9746e4dd5a76f8438cde4c799afdd59, type: 3}
+  m_josytickRightHorizontalReference: {fileID: 8153255862701326874, guid: c9746e4dd5a76f8438cde4c799afdd59, type: 3}
+  m_josytickRightVerticalReference: {fileID: -475713070315396580, guid: c9746e4dd5a76f8438cde4c799afdd59, type: 3}
+  m_killSwitchReference: {fileID: -3493947658565091989, guid: c9746e4dd5a76f8438cde4c799afdd59, type: 3}
+  m_joystickLeftHorizontalValue: 0
+  m_joystickLeftVerticalValue: 0
+  m_joystickRightHorizontalValue: 0
+  m_joystickRightVerticalValue: 0
+  m_killSwitchValue: 0
+--- !u!1 &4827000913832648823
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 9013675859635248356}
+  - component: {fileID: 3698870486958858649}
+  - component: {fileID: 3252623068346394409}
+  m_Layer: 0
+  m_Name: A DoubleStick Relay
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &9013675859635248356
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4827000913832648823}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.085938536, y: 0, z: 0, w: 0.9963005}
+  m_LocalPosition: {x: 0.0027591707, y: 0.084249705, z: -0.052941035}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 9079419958255755370}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: -9.86, y: 0, z: 0}
+--- !u!114 &3698870486958858649
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4827000913832648823}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c302a9d06a647124e968a967133153ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_dualStickRcState:
+    m_joystickLeftHorizontalValue: 0
+    m_joystickLeftVerticalValue: 0
+    m_joystickRightHorizontalValue: 0
+    m_joystickRightVerticalValue: 0
+    m_killSwitchValue: 0
+--- !u!114 &3252623068346394409
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4827000913832648823}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1667f49d51658974db6ec84f3d62ce3e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_dualStickSource: {fileID: 3698870486958858649}
+  m_sourceStatePreviousState:
+    m_joystickLeftHorizontalValue: 0
+    m_joystickLeftVerticalValue: 0
+    m_joystickRightHorizontalValue: 0
+    m_joystickRightVerticalValue: 0
+    m_killSwitchValue: 0
+  m_sourceStateCurrentState:
+    m_joystickLeftHorizontalValue: 0
+    m_joystickLeftVerticalValue: 0
+    m_joystickRightHorizontalValue: 0
+    m_joystickRightVerticalValue: 0
+    m_killSwitchValue: 0
+  m_onJoystickLeftHorizontalChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_onJoystickLeftVerticalChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_onJoystickRightHorizontalChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_onJoystickRightVerticalChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_onKillSwitchChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_onJoysticksChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_onAnyValueChanged:
+    m_PersistentCalls:
+      m_Calls: []

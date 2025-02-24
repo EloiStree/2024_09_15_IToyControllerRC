@@ -1,0 +1,74 @@
+{
+    "name": "DualStickOpenXrOnly",
+    "maps": [
+        {
+            "name": "DualStickOpenXrOnly",
+            "id": "25288fe0-2c9c-4033-86d8-8002a7d44a60",
+            "actions": [
+                {
+                    "name": "KillSwitchState",
+                    "type": "Button",
+                    "id": "37212e93-31cb-4565-98c3-6d0f5d6a4e6c",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "LeftJoystick",
+                    "type": "Value",
+                    "id": "cc16f80a-7a22-46b6-9b77-05db8bb20d31",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "RightJoystick",
+                    "type": "Value",
+                    "id": "c73e0c5a-6bda-4cc2-b81f-9b06ebdfb441",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "cc4a698a-05e6-419c-94e4-c073b0fa08e5",
+                    "path": "<XRController>{LeftHand}/{Primary2DMotion}",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "LeftJoystick",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "e9be4c7f-bb0b-408e-97f6-b897d5658e5d",
+                    "path": "<XRController>{RightHand}/{Primary2DMotion}",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "RightJoystick",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "2a218090-d022-425f-9602-6bac3198e9c3",
+                    "path": "<XRController>{LeftHand}/{SecondaryAction}",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "KillSwitchState",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}

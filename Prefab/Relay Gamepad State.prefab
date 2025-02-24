@@ -350,7 +350,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5050323193768642135}
   m_Layer: 0
-  m_Name: 'Relay Gamepad State '
+  m_Name: Relay Gamepad State
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -1,0 +1,156 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6357368589660407799
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8404585510304808689}
+  - component: {fileID: 1581810675853467315}
+  - component: {fileID: 2324931045571576464}
+  m_Layer: 0
+  m_Name: R OpenXR
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8404585510304808689
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6357368589660407799}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.085938536, y: 0, z: 0, w: 0.9963005}
+  m_LocalPosition: {x: 0.0027591707, y: 0.084249705, z: -0.052941035}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 8778707098903846808}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: -9.86, y: 0, z: 0}
+--- !u!114 &1581810675853467315
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6357368589660407799}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c302a9d06a647124e968a967133153ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_dualStickRcState:
+    m_joystickLeftHorizontalValue: 0
+    m_joystickLeftVerticalValue: 0
+    m_joystickRightHorizontalValue: 0
+    m_joystickRightVerticalValue: 0
+    m_killSwitchValue: 0
+--- !u!114 &2324931045571576464
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6357368589660407799}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1667f49d51658974db6ec84f3d62ce3e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_dualStickSource: {fileID: 1581810675853467315}
+  m_sourceStatePreviousState:
+    m_joystickLeftHorizontalValue: 0
+    m_joystickLeftVerticalValue: 0
+    m_joystickRightHorizontalValue: 0
+    m_joystickRightVerticalValue: 0
+    m_killSwitchValue: 0
+  m_sourceStateCurrentState:
+    m_joystickLeftHorizontalValue: 0
+    m_joystickLeftVerticalValue: 0
+    m_joystickRightHorizontalValue: 0
+    m_joystickRightVerticalValue: 0
+    m_killSwitchValue: 0
+  m_onJoystickLeftHorizontalChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_onJoystickLeftVerticalChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_onJoystickRightHorizontalChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_onJoystickRightVerticalChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_onKillSwitchChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_onJoysticksChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_onAnyValueChanged:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!1 &8040473412737217647
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8778707098903846808}
+  - component: {fileID: 969324518552238478}
+  m_Layer: 0
+  m_Name: Input
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8778707098903846808
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8040473412737217647}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8404585510304808689}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &969324518552238478
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8040473412737217647}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 611426df29b359140b7bd62f7b4c4c62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_leftRightJoysticks:
+    m_PersistentCalls:
+      m_Calls: []
+  m_onKillSwitchChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_onLeftJoystickReference: {fileID: -5844195311781032145, guid: e196a5382da24ef4f94dbec15863d14b, type: 3}
+  m_onRightJoystickReference: {fileID: 1409220260815677013, guid: e196a5382da24ef4f94dbec15863d14b, type: 3}
+  m_onKillSwitchChangedReference: {fileID: -3493947658565091989, guid: e196a5382da24ef4f94dbec15863d14b, type: 3}
+  m_leftJoystickValue: {x: 0, y: 0}
+  m_rightJoystickValue: {x: 0, y: 0}
+  m_killSwitchValue: 0

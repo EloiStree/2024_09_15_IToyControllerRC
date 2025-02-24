@@ -64,6 +64,14 @@ public class DualStickRcStateMono :  A_DualStickRcStateMono
         return m_dualStickRcState.m_killSwitchValue;
     }
 
+    public void SetWithDoubleJoysticks(Vector2 left, Vector2 right)
+    {
+        SetJoystickLeftHorizontal(left.x);
+        SetJoystickLeftVertical(left.y);
+        SetJoystickRightHorizontal(right.x);
+        SetJoystickRightVertical(right.y);
+    }
+
     public override void SetWith(I_DualStickRcStateGet dualStick)
     {
         dualStick.GetJoystickLeftHorizontal(out float percent11);

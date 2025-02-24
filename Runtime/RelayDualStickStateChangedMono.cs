@@ -16,6 +16,7 @@ public class RelayDualStickStateChangedMono : MonoBehaviour
     public UnityEvent<float> m_onJoystickRightHorizontalChanged;
     public UnityEvent<float> m_onJoystickRightVerticalChanged;
     public UnityEvent<bool> m_onKillSwitchChanged;
+    public UnityEvent<Vector2, Vector2> m_onJoysticksChanged;
     public UnityEvent<I_DualStickRcStateGet> m_onAnyValueChanged;
 
     public void Update()
@@ -78,6 +79,11 @@ public class RelayDualStickStateChangedMono : MonoBehaviour
         if (anyChanged)
         {
             m_onAnyValueChanged.Invoke(m_dualStickSource);
+            m_onJoysticksChanged.Invoke(
+                new Vector2(m_sourceStateCurrentState.m_joystickLeftHorizontalValue,
+                m_sourceStateCurrentState.m_joystickLeftVerticalValue),
+                new Vector2(m_sourceStateCurrentState.m_joystickRightHorizontalValue,
+                m_sourceStateCurrentState.m_joystickRightVerticalValue));
         }
     }
 }
