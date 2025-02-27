@@ -18,7 +18,7 @@
                     "name": "LeftJoystick",
                     "type": "Value",
                     "id": "cc16f80a-7a22-46b6-9b77-05db8bb20d31",
-                    "expectedControlType": "Vector2",
+                    "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
@@ -27,7 +27,7 @@
                     "name": "RightJoystick",
                     "type": "Value",
                     "id": "c73e0c5a-6bda-4cc2-b81f-9b06ebdfb441",
-                    "expectedControlType": "Vector2",
+                    "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
@@ -37,7 +37,7 @@
                 {
                     "name": "",
                     "id": "cc4a698a-05e6-419c-94e4-c073b0fa08e5",
-                    "path": "<XRController>{LeftHand}/{Primary2DMotion}",
+                    "path": "<OculusTouchController>{LeftHand}/thumbstick",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -48,7 +48,7 @@
                 {
                     "name": "",
                     "id": "e9be4c7f-bb0b-408e-97f6-b897d5658e5d",
-                    "path": "<XRController>{RightHand}/{Primary2DMotion}",
+                    "path": "<OculusTouchController>{RightHand}/thumbstick",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
